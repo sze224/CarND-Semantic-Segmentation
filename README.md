@@ -1,6 +1,20 @@
 # Semantic Segmentation
 ### Introduction
-In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
+The goal of this project is to implement a fully connected neural network using a pre-trained VGG-16 classifier to perform semantic segmentation in identifying the drivable portion from images taken from a car's dash cam. 
+
+### Approach
+This project employed a pre-trained VGG-16 image classifier and convert it to a fully connected neural network (FCN). The output of the original VGG-16 classifier was converted to a 1x1 convolution with a depth of 2 to signify the number of classes (road or non road). Then the 1x1 convolution is upsampled by multiple transposed convolutions to get the output back to the original image input size. To improved the overall performance, this network utilizes skip connections where output of earlier layers in the encoder portion is added element-wise to layers in the decoder portion. Prior to training, all of the convolution and transposed convolutions are initialized with a random normal initializer. 
+
+### Architecture details
+This network utilized cross entropy as the loss function and used an Adam Optimizer. After tuning the hyper parameters, the following values were able to achieve great results.
+##### learning rate - 0.001
+##### keep_prob - 0.5
+##### epochs - 50
+##### batch_size - 10
+
+### Results examples
+Here included a few pictures that show the performance of the FCN where the drivable area are marked as green.
+
 
 ### Setup
 ##### Frameworks and Packages
