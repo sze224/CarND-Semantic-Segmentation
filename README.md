@@ -13,8 +13,12 @@ This network utilized cross entropy as the loss function and used an Adam Optimi
 ##### batch_size - 10
 
 ### Results examples
-Here included a few pictures that show the performance of the FCN where the drivable area are marked as green.
-
+Here included a few pictures that show the performance of the FCN where the drivable area are marked as green. Overall, the performance is good! Only the drivable portion is marked as green.
+![alt text](https://github.com/sze224/CarND-Semantic-Segmentation/blob/master/example1.png)
+![alt text](https://github.com/sze224/CarND-Semantic-Segmentation/blob/master/example2.png)
+![alt text](https://github.com/sze224/CarND-Semantic-Segmentation/blob/master/example3.png)
+![alt text](https://github.com/sze224/CarND-Semantic-Segmentation/blob/master/example4.png)
+![alt text](https://github.com/sze224/CarND-Semantic-Segmentation/blob/master/example5.png)
 
 ### Setup
 ##### Frameworks and Packages
